@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1;
+}
+
+.main {
+    background-color: #bd9464;
+}
+
+.recipe__form {
+    height: 100vh;
+    width: 100%;
+}
+
+.recipe {
+    display: flex;
+    justify-content: center;
+}

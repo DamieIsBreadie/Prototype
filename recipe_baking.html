@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-recipe.css">
+    <title>Recipe Form</title>
+</head>
+<body>
+    <nav class="nav__form">
+
+    </nav>
+
+    <div class="main">
+        <div class="recipe__form">
+            <form class="recipe" onsubmit="addRecipe(event)">
+
+                <div class="recipe_field">
+                    <label for="recipID">Recipe ID:</label>
+                    <input type="number" id="recipID" placeholder="Recipe ID..." min="0" max="9999">
+
+                    <br>
+
+                    <label for="recipName">Recipe Name:</label>
+                    <input type="text" id="recipName" placeholder="Pasta">
+
+                    <br>
+
+                    <label for="recipType">Recipe Type:</label>
+                    <select name="recipType" id="recipType">
+                        <option value="Pastry">Pastry</option>
+                        <option value="Meal">Meal</option>
+                    </select>
+
+                    <br>
+
+                    <label for="recipComments">Comments:</label>
+                    <input type="text" id="recipComments" placeholder="">
+
+                    <br>
+
+                    <label for="recipIngredient">Ingredient:</label>
+                    <input type="text" id="recipIngredient" placeholder="Egg">
+                    <button type="button" onclick="addIngredient()">Add Ingredient</button>
+                    <ul id="ingredientList"></ul>
+
+                    <br>
+
+                    <label for="recipInstruction">Instruction:</label>
+                    <input type="text" id="recipInstruction" placeholder="">
+                    <button type="button" onclick="addInstruction()">Add Instruction</button>
+                    <ul id="instructionList"></ul>
+
+                    <br>
+
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <br>
+
+                    <input type="submit" id="Submit">
+                </div>
+                
+
+            </form>
+        </div>
+        
+    </div>
+    
+    <script src="scripts/script-recipe.js"></script>
+
+</body>
+</html>

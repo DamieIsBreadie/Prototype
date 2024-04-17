@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box; /* Causes both the border and padding to be the same size */
+    margin: 0;
+    padding: 0; 
+    /* Causes the navbar to be aligned to the border of the website */
+}
+
+.navbar {
+    display: flex;
+    background: #82d6ef;
+    border: 1px solid #624a15;
+    height: 60px;
+}
+
+.nav__container {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    text-decoration: none;
+    color: black;
+    padding: 0 5rem; /* Moves the "links", i.e. "About Me" around */
+}
+
+#nav__logo {
+    background-color: #56c9ff;
+    background-image: linear-gradient(to top, #624a15 0%, #3fa7cc 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+
+.data__tab {
+    float: left;
+    background-color: #49d27e;
+    width: 25%;
+    height: 500px;
+
+}
+
+#data__header {
+    text-align: center;
+}
+
+.test__tab {
+    float: right;
+    background-color: #49d27e;
+    width: 25%;
+    height: 500px;
+}
+
+#test__header {
+    text-align: center;
+}
+
+.test__feature {
+    margin: 0 10px;
+}
+
+.content__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Focuses on the text and is not associated with flex, although it almost does the same thing as align-items */
+    margin: 10px;
+    padding: 10px /* Both margin an padding add spaces between the navbar and the content body (Hero section) */
+}
+
+.content {
+    text-align: left;
+}

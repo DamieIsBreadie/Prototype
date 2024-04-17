@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1;
+}
+
+/* Nav Section */
+.navbar {
+    background: #825828;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns items vertically in the center */
+    /* justify-content and align-items only work for flex items */
+    height: 10vh; /*Affects text's vertical position*/
+    width: 100%; /* Ensures the container spans the full width of the parent */
+    /* padding: 0 50px; */
+    margin: 0; /* Removes default margin */
+}
+
+.image_1 {
+    height: 50px;
+    width: 50px;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+.nav__item {
+    list-style: none; /*Removes bullet points as well*/
+    margin-right: 20px;
+}
+
+.nav__links {
+    color: #d8a353;
+    display: flex;
+    text-decoration: none; /*Removes underlines, bolds, etc*/
+    padding: 0 1rem; /*Spaces the two links out*/
+}
+
+.nav__logo {
+    display: flex;
+}
+
+#logo__id {
+    background-color: #8d6428;
+    background-image: linear-gradient(to top, #d0926b 0%, rgba(255, 251, 245, 0.067) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Body Section */
+.main {
+    background-color: #bd9464;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.main__content {
+    justify-self: center;
+    text-align: center;
+}
+
+
+.main__content h1 {
+    font-size: 3rem;
+    background-color: #825828;
+    background-image: linear-gradient(to top, #af7635 0%, #503517 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #986223;
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #8a673d 0%, #9d713f 100%);
+    padding: 10px 32px; /*Adjusts the border size of the button*/
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4f3918;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
